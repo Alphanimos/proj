@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    background: #f1f1f1;
+}
+/* Adjustments for the container */
+.container {
+    position: absolute;
+    right: 20vw; /* Adjusted to accommodate the width of the sidebar */
+    width: 80vw;
+    /*height: calc(100vh - 10vh); /* Adjusted to exclude the header height */
+    background: #f1f1f1;
+    top: 10vh; /* Adjusted to start after the header */
+}
+
+/* Adjustments for the header */
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 20vw; /* Adjusted to accommodate the width of the sidebar */
+    width: 80vw;
+    height: 10vh;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Adjustments for the table */
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container th, .container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.container th {
+    background-color: #f2f2f2;
+}
+
+.container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container tr:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    /* Other styles for main content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+.return-to-top {
+    /* Button styles */
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px; /* Adjust as needed */
+}
+
+.return-to-top:hover {
+    background-color: #0a6e26; /* Darker green on hover */
+}
+
+/* Additional styles for inventory container */
+.inventory-container {
+    background-color: #f3d9b2; /* Wooden color */
+    border: 2px solid #8b4513; /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.inventory-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for inventory table */
+.inventory-table {
+    background-color: #f3d9b2; /* Wooden color */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-table th,
+.inventory-table td {
+    border: 1px solid #8b4513; /* Dark brown border */
+    padding: 8px;
+    text-align: left;
+}
+
+.inventory-table th {
+    background-color: #e0ac69; /* Light brown background for headers */
+}
+
+.inventory-table tr:nth-child(even) {
+    background-color: #f0e0b2; /* Lighter wooden color */
+}
+
+.inventory-table tr:hover {
+    background-color: #eecf9a; /* Highlighted wooden color */
+}

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+h3 {
+    color: #999;
+}
+
+.list-item {
+    position: relative; /* Make the parent li relative */
+}
+
+.more {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ecd794; /* Change as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Change as needed */
+    padding: 10px;
+    z-index: 1;
+    border: 1px solid #000000; /* Add border */
+    border-top: none; /* Remove top border to prevent double border */
+}
+
+.list-item:hover .more {
+    display: block;
+}
+
+.btn {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: green;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid green;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    /*border-bottom: 2px solid #999;*/
+}
+
+table {
+    padding: 10px;
+}
+th,td {
+    text-align: left;
+    padding: 8px;
+}
+
+.side-menu{
+    position: fixed;
+    top: 0; /* Keep the sidebar at the top */
+    left: 0; /* Keep the sidebar aligned to the left */
+    bottom: 0; /* Ensure the sidebar covers the entire height of the viewport */
+    background: #ecd794;
+    width: 19vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling for the sidebar */
+    z-index: 1; /* Ensure the sidebar stays above other content */
+}
+
+.side-menu .company-name {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu .company-name h1 img {
+    height: 100px;
+    width: 120px;
+}
+
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    background: green;
+    color: #ecd794;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .title h2{
+    display: flex;
+    align-items: center;
+    color: white; /* Add this line to set the font color to white */
+    text-decoration: none;
+}
+
+.container .header .nav .user-greeting {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.container .header .nav .user-greeting p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.container .header .nav .user-greeting img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}*/
+
+.container .header .nav .user-greeting .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.container .header .nav .user-greeting .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.date-time {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    color: white;
+}
