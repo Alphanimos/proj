@@ -1,11 +1,18 @@
 <?php
 
-$host="localhost";
-$user="root";
-$pass="";
-$db="user";
-$conn=new mysqli($host,$user,$pass,$db);
-if($conn->connect_error){
-    echo "Failed to connect DB".$conn->connect_error;
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "user";
+
+// Attempt to connect to MySQL database
+$conn = new mysqli($host, $user, $pass, $db);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Failed to connect to MySQL: " . $conn->connect_error);
+} else {
+    echo "Connected successfully";
 }
+
 ?>
